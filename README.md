@@ -6,6 +6,11 @@ Live page: https://epowell40.github.io/quick-automation-help/
 
 Public CSV cleanup gist: https://gist.github.com/epowell40/9c1171254104ca05ba0c1d4ac25bd414
 
+Public samples:
+
+- CSV cleanup script: https://github.com/epowell40/quick-automation-help/tree/main/samples/csv_cleanup
+- Bulk file renamer script: https://github.com/epowell40/quick-automation-help/tree/main/samples/file_renamer
+
 Fiverr checkout: https://www.fiverr.com/s/6YB7YWA
 
 CSV/Excel cleanup checkout: https://www.fiverr.com/epowell2/clean-format-and-organize-your-csv-or-excel-file
