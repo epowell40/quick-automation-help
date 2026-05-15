@@ -4,7 +4,11 @@ Landing page:
 
 https://epowell40.github.io/quick-automation-help/
 
-Live Fiverr gig:
+Live $20 Fiverr automation gig:
+
+https://www.fiverr.com/s/6YB7YWA
+
+Live Fiverr website gig:
 
 https://www.fiverr.com/s/1qGW8e0
 
@@ -18,6 +22,9 @@ I confirm scope before payment. No credentials, private data, spam, scraping beh
 
 Details and contact:
 https://epowell40.github.io/quick-automation-help/
+
+Fiverr checkout:
+https://www.fiverr.com/s/6YB7YWA
 
 ## Reddit / Forum Post
 
@@ -44,6 +51,9 @@ Boundaries:
 Details/contact:
 https://epowell40.github.io/quick-automation-help/
 
+Fiverr checkout:
+https://www.fiverr.com/s/6YB7YWA
+
 ## Direct Message
 
 Hi, I am taking small $20 automation fixes today: CSV/Excel cleanup, small Python/JavaScript scripts, file renaming, simple report extraction, or broken-script fixes.
@@ -52,9 +62,12 @@ I confirm scope before payment and I do not need credentials or private data. De
 
 https://epowell40.github.io/quick-automation-help/
 
+Fiverr checkout:
+https://www.fiverr.com/s/6YB7YWA
+
 ## Fiverr Update Note
 
-Fiverr W-9 appears approved from the May 14, 2026 email. If the seller account still blocks publishing, complete identity verification/profile-photo requirements manually, then publish the existing small-business website gig and add this link as a lightweight external portfolio reference only if Fiverr allows it under its terms.
+Fiverr W-9 appears approved from the May 14, 2026 email. The $20 automation gig and the small-business website gig are both published.
 
 ## Upwork Status Note
 
