@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSV Cleanup Automation Sample</title>
+    <style>
+      :root {
+        --ink: #17212b;
+        --muted: #536273;
+        --line: #d7dee8;
+        --paper: #f7f8fa;
+        --panel: #ffffff;
+        --accent: #14746f;
+        --accent-soft: #d9f1ee;
+        --warn: #8a5a00;
+        --warn-soft: #fff3d4;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        width: 1280px;
+        height: 769px;
+        margin: 0;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--ink);
+        background: var(--paper);
+      }
+      .wrap {
+        width: 100%;
+        height: 100%;
+        padding: 54px 64px;
+      }
+      .top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 32px;
+        margin-bottom: 34px;
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: 52px;
+        line-height: 1.02;
+        letter-spacing: 0;
+      }
+      .lead {
+        max-width: 740px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 22px;
+        line-height: 1.35;
+      }
+      .price {
+        flex: 0 0 auto;
+        border: 2px solid var(--accent);
+        border-radius: 8px;
+        background: #fff;
+        padding: 18px 22px;
+        text-align: right;
+      }
+      .price strong {
+        display: block;
+        font-size: 42px;
+        line-height: 1;
+      }
+      .price span {
+        display: block;
+        margin-top: 6px;
+        color: var(--muted);
+        font-weight: 700;
+      }
+      .boards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+      }
+      .board {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        overflow: hidden;
+      }
+      .board header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 64px;
+        padding: 0 22px;
+        border-bottom: 1px solid var(--line);
+        font-size: 22px;
+        font-weight: 800;
+      }
+      .tag {
+        border-radius: 5px;
+        padding: 6px 10px;
+        font-size: 14px;
+        font-weight: 800;
+      }
+      .tag.warn {
+        background: var(--warn-soft);
+        color: var(--warn);
+      }
+      .tag.good {
+        background: var(--accent-soft);
+        color: var(--accent);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 17px;
+      }
+      th,
+      td {
+        padding: 13px 14px;
+        border-bottom: 1px solid var(--line);
+        text-align: left;
+        white-space: nowrap;
+      }
+      th {
+        background: #eef2f6;
+        color: #334155;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+      tr:last-child td {
+        border-bottom: 0;
+      }
+      .bad {
+        color: #9f1239;
+        font-weight: 700;
+      }
+      .good {
+        color: var(--accent);
+        font-weight: 700;
+      }
+      .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        padding-top: 24px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 18px;
+      }
+      .cta {
+        color: var(--accent);
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="top">
+        <div>
+          <h1>CSV cleanup automation sample</h1>
+          <p class="lead">One small script can normalize messy exports, flag bad rows, and produce a clean file you can reuse.</p>
+        </div>
+        <div class="price">
+          <strong>$20</strong>
+          <span>small automation fix</span>
+        </div>
+      </section>
+
+      <section class="boards">
+        <div class="board">
+          <header>
+            Before
+            <span class="tag warn">messy export</span>
+          </header>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Amount</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>  Avery Stone</td>
+                <td>AVERY@EXAMPLE.COM</td>
+                <td>$ 120.00</td>
+                <td>5/1/26</td>
+              </tr>
+              <tr>
+                <td>Jordan Lee</td>
+                <td class="bad">missing</td>
+                <td>ninety</td>
+                <td>May 2</td>
+              </tr>
+              <tr>
+                <td>Casey Wu</td>
+                <td>casey@example.com </td>
+                <td>45</td>
+                <td>2026-05-03</td>
+              </tr>
+              <tr>
+                <td>Riley Park</td>
+                <td>riley@example</td>
+                <td>$78.50</td>
+                <td>05-04-2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="board">
+          <header>
+            After
+            <span class="tag good">clean output</span>
+          </header>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Amount</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Avery Stone</td>
+                <td>avery@example.com</td>
+                <td>$120.00</td>
+                <td class="good">valid</td>
+              </tr>
+              <tr>
+                <td>Jordan Lee</td>
+                <td></td>
+                <td></td>
+                <td class="bad">needs review</td>
+              </tr>
+              <tr>
+                <td>Casey Wu</td>
+                <td>casey@example.com</td>
+                <td>$45.00</td>
+                <td class="good">valid</td>
+              </tr>
+              <tr>
+                <td>Riley Park</td>
+                <td>riley@example.com</td>
+                <td>$78.50</td>
+                <td class="good">valid</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="footer">
+        <span>Dummy data only. No passwords, API keys, or private client files needed for scoping.</span>
+        <span class="cta">fiverr.com/s/6YB7YWA</span>
+      </section>
+    </main>
+  </body>
+</html>

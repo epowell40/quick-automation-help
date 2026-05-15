@@ -8,6 +8,8 @@ Fiverr checkout: https://www.fiverr.com/s/6YB7YWA
 
 ![Small automation fix Fiverr gig image](fiverr-automation-gig.png)
 
+![CSV cleanup automation before and after sample](fiverr-sample-output.png)
+
 Offer:
 
 - One small Python, JavaScript, spreadsheet, file cleanup, or workflow automation task.
