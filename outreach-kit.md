@@ -4,6 +4,10 @@ Landing page:
 
 https://epowell40.github.io/quick-automation-help/
 
+Live Fiverr gig:
+
+https://www.fiverr.com/s/1qGW8e0
+
 ## Short Post
 
 I am taking small $20 automation fixes today.
