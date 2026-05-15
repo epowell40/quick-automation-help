@@ -6,6 +6,8 @@ Live page: https://epowell40.github.io/quick-automation-help/
 
 Fiverr checkout: https://www.fiverr.com/s/6YB7YWA
 
+CSV/Excel cleanup checkout: https://www.fiverr.com/epowell2/clean-format-and-organize-your-csv-or-excel-file
+
 ![Small automation fix Fiverr gig image](fiverr-automation-gig.png)
 
 ![CSV cleanup automation before and after sample](fiverr-sample-output.png)
