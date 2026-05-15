@@ -2,6 +2,12 @@
 
 Public landing page for a small, legal automation service.
 
+Live page: https://epowell40.github.io/quick-automation-help/
+
+Fiverr checkout: https://www.fiverr.com/s/6YB7YWA
+
+![Small automation fix Fiverr gig image](fiverr-automation-gig.png)
+
 Offer:
 
 - One small Python, JavaScript, spreadsheet, file cleanup, or workflow automation task.
